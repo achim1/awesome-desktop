@@ -61,6 +61,7 @@ conky.config = {
     show_graph_scale = true,
     show_graph_range = false,
 	lua_load = 'clock.lua',
+	override_utf8_locale = true,
 	lua_draw_hook_post = 'main'
 }
 -- ${color grey}Frequency (in GHz):$color $freq_g
