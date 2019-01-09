@@ -29,8 +29,8 @@ conky.config = {
     alignment = 'top_left',
     gap_x = 100,
     gap_y = 200,
-    minimum_height = 1000,
-	minimum_width = 1000,
+    minimum_height = 10000,
+	minimum_width = 10000,
     background = false,
     border_width = 1,
     cpu_avg_samples = 2,
@@ -60,13 +60,17 @@ conky.config = {
     use_spacer = 'none',
     show_graph_scale = true,
     show_graph_range = false,
-	lua_load = 'gauges.lua',
+	lua_load = 'gauges-small-8700K.lua',
 	override_utf8_locale = true,
 	lua_draw_hook_post = 'main'
 }
 -- ${color grey}Frequency (in GHz):$color $freq_g
+-- ${goto 90}${font DejaVu Sans Mono:size=7,weight:normal}${FFFFFF}${top name 1}${alignr}${top cpu 1}%
 
 
 
 conky.text = [[
+${color white}${font DejaVu Sans Mono:size=64,weight:bold}${color}CPU
+${color white}Total CPU Usage:$color $cpu%
+
 ]]
