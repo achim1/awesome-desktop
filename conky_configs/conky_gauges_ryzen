@@ -29,16 +29,18 @@ conky.config = {
     alignment = 'top_left',
     gap_x = 100,
     gap_y = 200,
-    minimum_height = 10000,
-	minimum_width = 10000,
+    minimum_height = 1000,
+	minimum_width = 1700,
     background = false,
     border_width = 1,
     cpu_avg_samples = 2,
 	default_color = 'white',
     default_outline_color = 'white',
     default_shade_color = 'white',
-    draw_borders = false,
-    draw_graph_borders = false,
+	default_graph_height = 60,
+	default_graph_width = 200,
+	draw_borders = false,
+    draw_graph_borders = true,
     draw_outline = false,
     draw_shades = false,
     use_xft = true,
@@ -54,6 +56,7 @@ conky.config = {
 	own_window_transparent = true,
 	own_window_argb_visual = true,
 	double_buffer = true,
+	show_graph_scale = true,
 	stippled_borders = 0,
     update_interval = 1.0,
     uppercase = false,
@@ -70,7 +73,4 @@ conky.config = {
 
 
 conky.text = [[
-${color white}${font DejaVu Sans Mono:size=64,weight:bold}${color}CPU
-${color white}Total CPU Usage:$color $cpu%
-
 ]]
